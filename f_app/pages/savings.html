@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Savings & Investments</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div><strong>Finance Tracker</strong></div>
+    <div>
+        <a href="..\index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a href="dashboard.html"><i class="fas fa-home"></i> Main page</a>
+        <a href="expenses.html"><i class="fas fa-credit-card"></i> Expenses</a>
+        <a href="income.html"><i class="fas fa-money-bill-wave"></i> Income</a>
+        <a href="budget.html"><i class="fas fa-wallet"></i> Budget</a>
+        <a href="debts.html"><i class="fas fa-hand-holding-usd"></i> Debts</a>
+        <a href="reports.html"><i class="fas fa-chart-line"></i> Reports</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1><i class="fas fa-piggy-bank"></i> Savings & Investment Goals</h1>
+
+    <div class="card">
+      <h2><i class="fas fa-plus-circle"></i> Set New Goal</h2>
+      <form id="savingsForm">
+        <input type="text" id="goalName" placeholder="Goal Name (e.g. Emergency Fund)" required />
+        <input type="number" id="goalTarget" placeholder="Target Amount (€)" required />
+        <input type="number" id="goalSaved" placeholder="Amount Saved (€)" required />
+        <button type="submit"><i class="fas fa-save"></i> Add Goal</button>
+      </form>
+      <button id="resetBtn" class="reset-button">
+        <i class="fas fa-sync-alt"></i> Reset Data
+      </button>
+      
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-list-ul"></i> Goals Overview</h2>
+      <ul id="goalsList"></ul>
+    </div>
+  </div>
+
+  <!-- Load JS after the DOM is ready -->
+  <script src="../js/savings.js"></script>
+  <script src="../js/resetButton.js"></script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #00bcd4, #ff4081, #ffeb3b);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #333;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-image: url('../img/bg-pattern.png');
+    background-repeat: repeat;
+  }
+  
+  /* Animation for Background */
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  /* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a3d5f;
+  padding: 10px 20px;
+  color: white;
+}
+
+/* Logo and title container */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.app-icon {
+  font-size: 30px;
+  color: #f1c40f;
+  margin-right: 10px;
+}
+
+/* Title styling */
+.navbar-title {
+  font-size: 26px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #f9f9f9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Navbar links */
+.navbar-links {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-links a {
+  color: #f9f9f9;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.restart-btn {
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.reset-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.reset-button:hover {
+  background-color: #c0392b;
+}
+
+.restart-btn:hover {
+  background-color: #d62828;
+}
+
+
+.navbar-links a:hover {
+  color: #f1c40f;
+}
+
+/* Icon spacing */
+.navbar-links i {
+  margin-right: 8px;
+}
+
+  
+  /* Headings */
+  h1, h2, h3 {
+    color: #222;
+    margin-bottom: 1rem;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: linear-gradient(to right, #43cea2, #185a9d);
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .navbar a {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    transition: opacity 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    opacity: 0.7;
+  }
+  
+  /* Layout Container */
+  .container {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Card Styles */
+  .card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 2rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.75rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #c51162;
+    transform: scale(1.05);
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  input, select {
+    padding: 0.9rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    flex: 1 1 220px;
+  }
+  
+  /* List Styles */
+  ul {
+    list-style: none;
+    margin-top: 1rem;
+  }
+  
+  ul li {
+    background: #ffe0b2;
+    margin-bottom: 12px;
+    padding: 0.9rem 1.1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  ul li button {
+    background-color: #ef5350;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+  }
+  
+  ul li button:hover {
+    background-color: #c62828;
+  }
+  
+  /* Quick Links */
+  .quick-links a {
+    background-color: #26c6da;
+    color: #fff;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 0.3rem;
+    display: inline-block;
+    transition: background 0.3s;
+  }
+  
+  .quick-links a:hover {
+    background-color: #00acc1;
+  }
+  
+  /* Finance Card */
+  .finance-card {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .finance-card h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .finance-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .finance-image:hover {
+    transform: scale(1.03);
+  }
+  
+  .finance-card p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .card {
+      margin-bottom: 1.5rem;
+    }
+  
+    .container {
+      padding: 1rem;
+    }
+  
+    input, select {
+      width: 100%;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  

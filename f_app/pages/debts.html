@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Debt Management</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="../js/debts.js" defer></script>
+  <script src="../js/resetButton.js"></script>
+
+</head>
+<body>
+  <nav class="navbar">
+    <div><strong>Finance Tracker</strong></div>
+    <div>
+        <a href="..\index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a href="dashboard.html"><i class="fas fa-home"></i> Main page</a>
+        <a href="expenses.html"><i class="fas fa-credit-card"></i> Expenses</a>
+        <a href="income.html"><i class="fas fa-money-bill-wave"></i> Income</a>
+        <a href="budget.html"><i class="fas fa-wallet"></i> Budget</a>
+        <a href="savings.html"><i class="fas fa-piggy-bank"></i> Savings</a>
+        <a href="debts.html"><i class="fas fa-hand-holding-usd"></i> Debts</a>
+        <a href="../pages/reports.html"><i class="fas fa-chart-pie"></i> Reports</a>
+    </div>
+  </nav>
+  
+  
+
+  <div class="container">
+    <h1><i class="fas fa-hand-holding-usd"></i> Debt Management</h1>
+
+    <div class="card">
+      <h2><i class="fas fa-plus-circle"></i> Add Debt</h2>
+      <form id="debtForm">
+        <input type="text" id="debtName" placeholder="Creditor or Loan Name" required />
+        <input type="number" id="debtAmount" placeholder="Total Amount (€)" required />
+        <input type="number" id="debtPaid" placeholder="Amount Repaid (€)" required />
+        <button type="submit"><i class="fas fa-check-circle"></i> Track Debt</button>
+      </form>
+      <button id="resetBtn" class="reset-button">
+        <i class="fas fa-sync-alt"></i> Reset Data
+      </button>
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-list-ul"></i> Debt List</h2>
+      <ul id="debtList"></ul>
+    </div>
+  </div>
+</body>
+</html>

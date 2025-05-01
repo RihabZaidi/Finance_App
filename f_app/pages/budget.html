@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Budget</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/budget.js" defer></script>
+  <script src="../js/resetButton.js"></script>
+  <!-- Ensure JavaScript is loaded after the DOM -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div><strong>Finance Tracker</strong></div>
+    <div>
+        <a href="..\index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a href="index.html"><i class="fas fa-home"></i> Main page</a>
+        <a href="expenses.html"><i class="fas fa-credit-card"></i> Expenses</a>
+        <a href="income.html"><i class="fas fa-money-bill-wave"></i> Income</a>
+        <a href="budget.html"><i class="fas fa-wallet"></i> Budget</a>
+        <a href="savings.html"><i class="fas fa-piggy-bank"></i> Savings</a>
+        <a href="debts.html"><i class="fas fa-hand-holding-usd"></i> Debts</a>
+        <a href="../pages/reports.html"><i class="fas fa-chart-pie"></i> Reports</a>
+        <a href="#" id="logoutBtn">Logout</a>
+
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1><i class="fas fa-wallet"></i> Monthly Budget</h1>
+
+    <div class="card">
+      <h2><i class="fas fa-dollar-sign"></i> Set Budget</h2>
+      <form id="budgetForm">
+        <input type="month" id="budgetMonth" required />
+        <input type="number" id="budgetAmount" placeholder="Amount (€)" required />
+        <button type="submit"><i class="fas fa-save"></i> Save Budget</button>
+      </form>
+      <button id="resetBtn" class="reset-button">
+        <i class="fas fa-sync-alt"></i> Reset Data
+      </button>
+      
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-list-ul"></i> Saved Budgets</h2>
+      <ul id="budgetList"></ul>
+    </div>
+  </div>
+
+</body>
+</html>
